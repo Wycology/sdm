@@ -88,7 +88,7 @@ setMethod ('show' , 'sdmModels',
                
                cat('replicate.methods (data partitioning) : ' , paste(unique(mi$replication),collapse=','), '\n')
                cat('number of replicates (each method)    : ' , object@setting@n.replicates, '\n')
-               cat('toral number of replicates per model  : ' , paste(n,'(per species)'), '\n')
+               cat('total number of replicates per model  : ' , paste(n,'(per species)'), '\n')
                if ('subsampling' %in% unique(mi$replication))
                  cat('test percentage (in subsampling)      : ' , object@setting@test.percentage, '\n')
                
